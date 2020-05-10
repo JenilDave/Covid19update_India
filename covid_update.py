@@ -95,7 +95,7 @@ def print_console_dict(obj):
     print("\nLast Updated at ",obj['dt'])
     
 def make_plt(stut,ac,dec,inac):
-    
+    global ste_codes
     a1,a2,a3 = 0,0,0
     fig,(a1,a2,a3) = plt.subplots(nrows= 3,ncols=1,sharex= True, sharey= True)
     a1.bar(stut,ac,color= 'r')
